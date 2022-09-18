@@ -26,5 +26,5 @@ COPY --from=0 /app/main .
 COPY ./public/index.html public/index.html
 COPY ./public/script.js public/script.js
 COPY ./public/style.css public/style.css
-CMD ["/app/main"]
+CMD ["java","-jar","/home/jar-name.jar"]
 EXPOSE 3000
